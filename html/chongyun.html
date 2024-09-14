@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 1 of Web Programming Practicum</title>
+
+    <style type="text/css">
+        *
+        {
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            font-family: 'Times New Roman', Times, serif;
+            color:white;
+        }
+
+        #div1
+        {
+            width: 100%;
+            height:50px;
+            background-color: lightgrey;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-left: 20px solid black;
+            border-right: 20px solid black;
+        }
+
+        #logo-div
+        {
+            width:100%;
+            min-height:50px;
+            background-color: #1c3c72;
+            padding-left:5%;
+            padding-top: 2%;
+            line-height:50px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #nav-div
+        {
+            width:100%;
+            min-height:30px;
+            background-color: #5799c1;
+            text-align: center;
+            line-height:30px;
+            margin-bottom: 10px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        #header-banner-div
+        {
+            width:100%;
+            height:65px;
+            background-color: #1c3c72;
+            text-align: center;
+            line-height: 65px;
+            margin-bottom: 10px;
+        }
+
+        #main-div
+        {
+            width:100%;
+            margin-bottom: 10px;
+        }
+
+        #sidebar-div
+        {
+            width:38.8%;
+            height:500px;
+            background-color: #1c3c72;
+            float:left;
+            text-align:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:10%;
+        }
+
+        #bodyarea-div
+        {
+            width:60%;
+            height:500px;
+            background-color: #5799c1;
+            float:right;
+            text-align:right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+            padding:5%;
+        }
+
+        .clearfix::after
+        {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        #footer-div
+        {
+            width:100%;
+            height:143px;
+            background-color: #1c3c72;
+            text-align:center;
+            padding:5%;
+            margin-bottom: 10px;
+        }
+
+        #wrapper-div
+        {
+            width:80%;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper-div">
+        <div id="logo-div">
+            <img src="\img\logo-genshin-impact-42372.png" alt="Genshin Impact Logo" width="25%">
+        </div>
+
+        <div id="nav-div">
+            <ul>
+                <a href="../index.html">Home | </a>
+                <a href="\html\bennett.html">Buff Support | </a>
+                <a href="\html\chongyun.html">Main DPS | </a>
+                <a href="\html\noelle.html">Shield Support | </a>
+                <a href="\html\aether.html">Sub DPS</a>
+            </ul>
+        </div>
+
+        <div id="header-banner-div">
+            <h1>Main DPS: Chongyun</h1>
+        </div>
+
+        <div id="main-div" class="clearfix">
+            <div id="sidebar-div">
+                <img src="\img\Chongyun.png" alt="Chongyun" width="120%">
+            </div>
+            <div id="bodyarea-div">
+                <h2><b>Chongyun</b></h2>
+                <p>★★★★★☆</p>
+                <h3><b>Level 80/80</b></h3>
+
+                <br>
+                <p><b>Max HP:</b> 13,763 <br>
+                <b>ATK:</b> 1,679 <br>
+                <b>DEF:</b> 900 <br>      
+                <b>Elemental Mastery:</b> 26 <br>
+                <b>Max Stamina:</b> 240 <br><br>
+                <b>Friendship:</b> 7 <br><br>
+                An <b>exorcist</b> who roams the land with <b>Liyue</b> as his base of operations, evil spirits fleeing wherever he goes. As the <b>heir to a clan</b> of exorcists, he has always possessed abilities <b>superior</b> to most. However, these abilities are <b>not</b> the result of training, but of an <b>inborn trait — a pure yang spirit</b>.</p>
+            </div>
+        </div>
+
+        <div id="footer-div">
+        <h3><b>Genshin Impact</b> is currently having a collaboration with <b>McDonald's</b>, the company who has been open with their support towards <b>Israel</b> who is currently <b>genociding Palestine</b>. Don't forget to keep <b>boycott</b>ing.</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Elemen untuk memberikan judul -->
+    <title>Assignment 1 of Web Programming Practicum</title>
+
+    <!-- Elemen untuk memberikan style CSS pada web -->
+    <style type="text/css">
+        *
+        {
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #div1
+        {
+            width: 100%;
+            height:50px;
+            background-color: lightgrey;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-left: 20px solid black;
+            border-right: 20px solid black;
+        }
+
+        #logo-div
+        {
+            width:100%;
+            min-height:50px;
+            background-color: #ffe599;
+            padding-left:5%;
+            padding-top: 2%;
+            line-height:50px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #nav-div
+        {
+            width:100%;
+            min-height:30px;
+            background-color: #ffc4c4;
+            text-align: center;
+            line-height:30px;
+            margin-bottom: 10px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        #header-banner-div
+        {
+            width:100%;
+            height:65px;
+            background-color: #ffe599;
+            text-align: center;
+            line-height: 65px;
+            margin-bottom: 10px;
+        }
+
+        #main-div
+        {
+            width:100%;
+            margin-bottom: 10px;
+        }
+
+        #sidebar-div
+        {
+            width:38.8%;
+            height:500px;
+            background-color: #ffe599;
+            float:left;
+            text-align:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:10%;
+        }
+
+        #bodyarea-div
+        {
+            width:60%;
+            height:500px;
+            background-color: #ffc4c4;
+            float:right;
+            text-align:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:10%;
+        }
+
+        .clearfix::after
+        {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        #footer-div
+        {
+            width:100%;
+            height:143px;
+            background-color: #ffe599;
+            text-align:center;
+            padding:5%;
+            margin-bottom: 10px;
+        }
+
+        #wrapper-div
+        {
+            width:80%;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Elemen untuk membungkus satu halaman web -->
+    <div id="wrapper-div">
+        <!-- Elemen untuk membungkus bagian peletakan logo dan memberi struktur layout pada web -->
+        <div id="logo-div">
+            <!-- Elemen untuk memasukkan gambar logo Genshin Impact dari folder img pada web -->
+            <img src="img/logo-genshin-impact-42376.png" alt="Genshin Impact Logo" width="25%">
+        </div>
+
+        <!-- Elemen untuk membungkus bagian navigasi dan memberi struktur layout pada web -->
+        <div id="nav-div">
+            <!-- Elemen untuk memberi garis bawah (underline) pada tulisan -->
+            <ul>
+                <!-- Elemen untuk membuat clickable link pada tulisan -->
+                <a href="index.html">Home | </a>
+                <a href="bennett.html">Buff Support | </a>
+                <a href="chongyun.html">Main DPS | </a>
+                <a href="noelle.html">Shield Support | </a>
+                <a href="aether.html">Sub DPS</a>
+            </ul>
+        </div>
+
+        <!-- Elemen untuk membungkus bagian header banner dan memberi struktur layout pada web -->
+        <div id="header-banner-div">
+            <!-- Elemen untuk membuat heading 1 -->
+            <h1>My 4 Mains on Genshin</h1>
+        </div>
+
+        <!-- Elemen untuk membungkus bagian main yang di dalamnya berisi sidebar dan body area dan memberi struktur layout pada web -->
+        <div id="main-div" class="clearfix">
+            <!-- Elemen untuk membungkus bagian sidebar dan memberi struktur layout pada web -->
+            <div id="sidebar-div">
+                <!-- Elemen untuk memasukkan gambar kinich dari folder img pada web -->
+                <img src="img\kinich.jpg" alt="Kinich Banner" width="185%">
+
+                <!-- Elemen untuk memberikan garis baru pada elemen selanjutnya -->
+                <br>
+
+                <!-- Elemen untuk memasukkan gambar ei dari folder img pada web -->
+                <img src="img\ei.jpg" alt="Ei Banner" width="185%">
+            </div>
+
+            <!-- Elemen untuk membungkus bagian body area dan memberi struktur layout pada web -->
+            <div id="bodyarea-div">
+                <!-- Elemen untuk membuat heading 2 pada web -->
+                <h2>Genshin Impact</h2>
+                <!-- <p> adalah elemen yang menandakan paragraf di dalam web dan <b> adalah elemen yang membuat tulisan di dalamnya menjadi bold -->
+                <p>is an action role-playing game developed and published by <b>miHoYo</b>. It takes place in the fantasy world of <b>Teyvat</b>, home to <b>seven nations</b>, each of which is tied to a different <b>element</b> and ruled by a different <b>god (archon)</b>.</p>
+                
+                <br><br>
+
+                <p>The story follows the <b>Traveler</b>, an interstellar <b>adventurer</b> who, at the start of the game, is separated from their <b>twin sibling</b> after the two land in Teyvat. Thereafter, the Traveler journeys across the nations of Teyvat in search of the lost sibling, accompanied by their guide, <b>Paimon</b>. Along the way, the two befriend <b>myriad individuals</b>, become involved in the <b>affairs</b> of its nations, and begin to <b>unravel</b> the mysteries of the land.</p>
+            </div>
+        </div>
+
+        <!-- Elemen untuk membungkus bagian footer dan memberi struktur layout pada web -->
+        <div id="footer-div">
+            <!-- Elemen untuk membuat heading 3 pada web -->
+            <h3><b>Genshin Impact</b> is currently having a collaboration with <b>McDonald's</b>, the company who has been open with their support towards <b>Israel</b> who is currently <b>genociding Palestine</b>. Don't forget to keep <b>boycott</b>ing.</h3>
+        </div>
+    </div>
+</body>
+</html>
